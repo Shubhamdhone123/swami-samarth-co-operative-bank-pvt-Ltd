@@ -1,0 +1,162 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f6f6f6;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 
+                0 10px 10px rgba(0, 0, 0, 0.22);
+    text-align: center;
+}
+
+.profile-card {
+    margin-bottom: 30px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.profile-card p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #777;
+}
+
+.profile-details h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #343a40;
+}
+
+.profile-details p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.profile-actions {
+    margin-top: 30px;
+}
+
+.edit-btn, .logout-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #218838;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #777;
+}
+a {
+  text-decoration: none;
+  color: #ffffff; /* white */
+
+}
+
+ /*animation css  */
+
+.profile-container {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.profile-card {
+  animation: slideInFromLeft 2s;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.profile-details {
+  animation: slideInFromRight 2s;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.profile-actions {
+  animation: fadeInUp 2s;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

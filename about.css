@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header.header {
+    background:#007bff;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color:#007bff;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vision-mission {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    background: #dfe7f1;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.values .value-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.value-card {
+    padding: 15px;
+    background: #e0f7fa;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.services ul, .why-choose-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li, .why-choose-us li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+footer.footer {
+    text-align: center;
+    padding: 15px 0;
+    background:#007bff;
+    color: #fff;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .vision-mission {
+        flex-direction:column;
+}
+}
